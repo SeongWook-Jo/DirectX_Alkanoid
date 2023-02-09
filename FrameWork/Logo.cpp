@@ -142,7 +142,7 @@ void Logo::Update(double frame)
 void Logo::Draw()
 {
 	loadimg.SetColor(255,255,255, alpha);  // 색상 변경
-	loadimg.Draw( 350 , 100 ) ;  //이미지출력
+	loadimg.Draw( 430 , 100 ) ;  //이미지출력
 //	dv_font.DrawString( "로고" , 200 , 210 ) ;   //글자출력
 
 

@@ -9,6 +9,9 @@ public :
 	~Map();
 	Sprite test;
 	bool tests;
+
+	Sprite m_MapImg[2];	//스테이지1 맵 스프라이트
+
 	Sprite m_MapImg1_1[6];
 	Sprite m_MapImg1_2[45];
 	Sprite m_MapImg1_3[65];
