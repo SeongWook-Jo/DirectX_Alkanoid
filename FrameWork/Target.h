@@ -9,8 +9,8 @@ typedef struct Tar
 
 class Target
 {
-	Sprite Tgimg[2];
-	Sprite Tgimg2[4];
+	Sprite BarImg;
+	Sprite BallImg;
 
 public :
 	Target();
@@ -18,6 +18,9 @@ public :
 
 	DWORD AniTime1;
 	DWORD AniTime2;
+
+	//아이템 적용 시 변경 1로 변경
+	int BarState;
 
 	bool m_Life;
 	int m_TgCount1;

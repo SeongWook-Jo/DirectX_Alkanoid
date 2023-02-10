@@ -7,6 +7,9 @@
 #define UP 2
 #define DOWN 3
 
+#define STARTWIDTH   600
+#define STARTHEIGHT  700
+
 // 데이타 베이스
 //#define DB_HOST "127.0.0.1"
 //#define DB_USER "root"
