@@ -37,3 +37,11 @@ enum gamework
 	WORK = 1,
 	DRAW = 2
 };
+
+template <typename T>
+T Clamp(T value, T min, T max)
+{
+	if (value > max) value = max;
+	if (value < min) value = min;
+	return value;
+}

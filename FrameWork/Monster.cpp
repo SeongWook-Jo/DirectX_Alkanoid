@@ -227,7 +227,7 @@ void Monster::Update()
 		FishCountTime = GetTickCount64();
 	}
 
-	 Boom();
+	 //Boom();
 
 
 	 if (m_Boom1 == true)
@@ -262,32 +262,32 @@ void Monster::Update()
 
 */
 
-void Monster::Boom()
-{
-	for(int i=0; i<2; i++)
-	{
-		if(fish[i].life == true && target.m_Life == true)
-		{
-
-			float distance = (float) sqrt( (target.m_Target.dx -fish[i].dx ) * (target.m_Target.dx -fish[i].dx ) + 
-								 (target.m_Target.dy -fish[i].dy ) * (target.m_Target.dy -fish[i].dy ) );
-			if(distance < 40 )
-			{
-		
-
-				fish[i].life = false;
-				fish[i].Shot=true;  
-				m_Boom1 = true;
-
-				m_BoomX1 = target.m_W - 30;
-				m_BoomY1 = target.m_H - 30;
-			//	sound.m_EDie->Play(NULL);
-			}
-		}
-	}
-		//if(target.m_Life == true)
-		//target.m_Life = false;
-}
+//void Monster::Boom()
+//{
+//	for(int i=0; i<2; i++)
+//	{
+//		if(fish[i].life == true && target.m_Life == true)
+//		{
+//
+//			float distance = (float) sqrt( (target.m_Target.dx -fish[i].dx ) * (target.m_Target.dx -fish[i].dx ) + 
+//								 (target.m_Target.dy -fish[i].dy ) * (target.m_Target.dy -fish[i].dy ) );
+//			if(distance < 40 )
+//			{
+//		
+//
+//				fish[i].life = false;
+//				fish[i].Shot=true;  
+//				m_Boom1 = true;
+//
+//				m_BoomX1 = target.m_W - 30;
+//				m_BoomY1 = target.m_H - 30;
+//			//	sound.m_EDie->Play(NULL);
+//			}
+//		}
+//	}
+//		//if(target.m_Life == true)
+//		//target.m_Life = false;
+//}
 
 
 
@@ -332,7 +332,7 @@ void Monster::Draw()
 
 				}
 
-				if (Gmanager.m_Collision == true)
+				/*if (Gmanager.m_Collision == true)
 				{
 					for (int i = 0; i < 2; i++)
 					{
@@ -352,7 +352,7 @@ void Monster::Draw()
 						}
 
 					}
-				}
+				}*/
 
 
 

@@ -6,12 +6,13 @@ class Ball
 
 public:
 	Ball();
-	RECT m_rcCol;
+	RECT m_Col;
 	float m_W;
 	float m_H;
 
-	float m_MoveX;
-	float m_MoveY;
+	float m_radius;
+	float m_DirX;
+	float m_DirY;
 
 	void Init();
 	void Update();

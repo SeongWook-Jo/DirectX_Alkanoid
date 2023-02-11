@@ -2,11 +2,6 @@
 #include "Include.h"
 
 
-typedef struct Tar
-{
-	double dx, dy, dz, drx, dry, drz;	// 데미지존
-};
-
 
 class Target
 {
@@ -24,9 +19,9 @@ public :
 
 	float m_W;
 	float m_H;
-	Tar m_Target;
 
-	RECT m_rc;
+	float m_BarWidth;
+	float m_BarHeight;
 
 	void Init();
 	void Update();

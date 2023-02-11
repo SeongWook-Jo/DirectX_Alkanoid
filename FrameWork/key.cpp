@@ -22,8 +22,8 @@ void Key::Update()
 		{
 
 			ball.bTempStart = !ball.bTempStart;
-			ball.m_MoveX = 1;
-			ball.m_MoveY = -1;
+			ball.m_DirX = 1;
+			ball.m_DirY = 1;
 
 			KeyTime = GetTickCount64();
 		}
@@ -47,12 +47,10 @@ void Key::Update()
 			if(target.m_W<=0)
 			{
 				target.m_W = target.m_W;
-				target.m_Target.dx=target.m_Target.dx;
 			}
 			else if(Gmanager.m_GameStart==true)
 			{
 				target.m_W-=5;
-				target.m_Target.dx-=5;
 			}
 			KeyTime1 = GetTickCount64();
 		}
@@ -66,12 +64,10 @@ void Key::Update()
 			if(target.m_W>=1190)
 			{
 				target.m_W = target.m_W;
-				target.m_Target.dx=target.m_Target.dx;
 			}
 			else if(Gmanager.m_GameStart==true)
 			{
 				target.m_W+=5;
-				target.m_Target.dx+=5;
 			}
 			KeyTime1 = GetTickCount64();
 		}

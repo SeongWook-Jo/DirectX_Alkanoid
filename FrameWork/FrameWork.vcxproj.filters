@@ -43,6 +43,9 @@
     <Filter Include="소스 파일\새">
       <UniqueIdentifier>{195466a1-5be7-4fc6-af06-908793889477}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Ball">
+      <UniqueIdentifier>{b5354847-b5af-4b2f-a3ea-8e7dcb4d5ce7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h">
@@ -102,6 +105,9 @@
     <ClInclude Include="Bird.h">
       <Filter>소스 파일\새</Filter>
     </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>소스 파일\Ball</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="key.cpp">
@@ -154,6 +160,9 @@
     </ClCompile>
     <ClCompile Include="Bird.cpp">
       <Filter>소스 파일\새</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>소스 파일\Ball</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

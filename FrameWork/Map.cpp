@@ -20,50 +20,50 @@ void Map::Init()	//로드할 이미지 넣어놓고
 	m_MapImg[0].Create("./resource/Img/map1/BG_Arkanoid/back1.png", false, D3DCOLOR_XRGB(0, 0, 0));
 	m_MapImg[1].Create("./resource/Img/map1/BG_Arkanoid/frame1.png", false, D3DCOLOR_XRGB(0, 0, 0));
 
-	//나뉘어져 있는 레이어이미지들 출력
-	for (i = 0; i < 6; i++)
-	{
-		sprintf_s(FileName, "./resource/Img/map1/BG_Hades_1/BG_Hades_%04d.tga", i + 1);
-		m_MapImg1_1[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
+	////나뉘어져 있는 레이어이미지들 출력
+	//for (i = 0; i < 6; i++)
+	//{
+	//	sprintf_s(FileName, "./resource/Img/map1/BG_Hades_1/BG_Hades_%04d.tga", i + 1);
+	//	m_MapImg1_1[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
 
-	}
+	//}
 
-	j = 1;
-	for (i = 0; i < 45; i++)
-	{
-		sprintf_s(FileName, "./resource/Img/map1/BG_Hades_2/BG_Hades_0002_%06d.tga", j);
-		m_MapImg1_2[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
-		j += 2;
+	//j = 1;
+	//for (i = 0; i < 45; i++)
+	//{
+	//	sprintf_s(FileName, "./resource/Img/map1/BG_Hades_2/BG_Hades_0002_%06d.tga", j);
+	//	m_MapImg1_2[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
+	//	j += 2;
 
-	}
+	//}
 
-	for (int i = 0; i < 65; i++)
-	{
-		sprintf_s(FileName, "./resource/Img/map1/BG_Medusa_3/BG_Medusa_fire_01_%04d.tga", i + 1);
-		m_MapImg1_3[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
+	//for (int i = 0; i < 65; i++)
+	//{
+	//	sprintf_s(FileName, "./resource/Img/map1/BG_Medusa_3/BG_Medusa_fire_01_%04d.tga", i + 1);
+	//	m_MapImg1_3[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
 
-	}
+	//}
 
-	for (int i = 0; i < 7; i++)
-	{
-		sprintf_s(FileName, "./resource/Img/map1/BG_Poseidon_1/BG_Poseidon_%04d.tga", i + 1);
-		m_MapImg2_1[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
+	//for (int i = 0; i < 7; i++)
+	//{
+	//	sprintf_s(FileName, "./resource/Img/map1/BG_Poseidon_1/BG_Poseidon_%04d.tga", i + 1);
+	//	m_MapImg2_1[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
 
-	}
+	//}
 
-	for (int i = 0; i < 30; i++)
-	{
-		sprintf_s(FileName, "./resource/Img/map1/BG_Poseidon_2/1%04d.png", i);
-		m_MapImg2_2[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
+	//for (int i = 0; i < 30; i++)
+	//{
+	//	sprintf_s(FileName, "./resource/Img/map1/BG_Poseidon_2/1%04d.png", i);
+	//	m_MapImg2_2[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
 
-	}
+	//}
 
-	for (int i = 0; i < 45; i++)
-	{
-		sprintf_s(FileName, "./resource/Img/map1/BG_Poseidon_3/1%04d.png", i);
-		m_MapImg2_3[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
+	//for (int i = 0; i < 45; i++)
+	//{
+	//	sprintf_s(FileName, "./resource/Img/map1/BG_Poseidon_3/1%04d.png", i);
+	//	m_MapImg2_3[i].Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
 
-	}
+	//}
 }
 
 void Map::Update(double frame)
