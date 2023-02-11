@@ -20,8 +20,8 @@ public :
 	float m_W;
 	float m_H;
 
-	float m_BarWidth;
-	float m_BarHeight;
+	float m_WSize;
+	float m_HSize;
 
 	void Init();
 	void Update();

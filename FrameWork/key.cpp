@@ -30,7 +30,6 @@ void Key::Update()
 
 	}
 	
-	
 	if(KeyDown(VK_F12))
 	{
 		if(GetTickCount64() - KeyTime > 200)
