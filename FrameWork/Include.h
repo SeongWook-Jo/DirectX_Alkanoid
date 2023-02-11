@@ -65,6 +65,7 @@
 #include "GameManager.h"
 
 #include "Bird.h"
+#include "Ball.h"
 
 // 데이타 베이스///////////////////
 #include "Mysql.h"

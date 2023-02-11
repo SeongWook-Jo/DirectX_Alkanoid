@@ -119,7 +119,7 @@ void Monster::Reset()
 }
 void Monster::Update()
 {
-
+	
 
 	if(Gmanager.m_GameStart==true)
 	{

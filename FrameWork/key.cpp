@@ -15,6 +15,21 @@ Key::~Key(void)
 
 void Key::Update()
 {
+	//Ball 스피드 임시 테스트
+	if (KeyDown(VK_F2))
+	{
+		if (GetTickCount64() - KeyTime > 200)
+		{
+
+			ball.bTempStart = !ball.bTempStart;
+			ball.m_MoveX = 1;
+			ball.m_MoveY = -1;
+
+			KeyTime = GetTickCount64();
+		}
+
+	}
+	
 	
 	if(KeyDown(VK_F12))
 	{

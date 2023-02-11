@@ -7,26 +7,23 @@ typedef struct Tar
 	double dx, dy, dz, drx, dry, drz;	// 데미지존
 };
 
+
 class Target
 {
 	Sprite BarImg;
-	Sprite BallImg;
 
 public :
 	Target();
 	~Target();
 
-	DWORD AniTime1;
-	DWORD AniTime2;
-
 	//아이템 적용 시 변경 1로 변경
 	int BarState;
+	//Ball ball;
 
 	bool m_Life;
-	int m_TgCount1;
-	int m_TgCount2;
-	double m_W;
-	double m_H;
+
+	float m_W;
+	float m_H;
 	Tar m_Target;
 
 	RECT m_rc;

@@ -15,6 +15,7 @@ void Game::Init()
 	monster.Init();
 	bird.Init();
 	sound.Init();
+	ball.Init();
 	Gmanager.Init();
 	// 데이타 베이스///////////////////
 	sql.Init();
@@ -26,6 +27,7 @@ void Game::Draw()
 	monster.Draw();
 	bird.Draw();
 	target.Draw();
+	ball.Draw();
 	Gmanager.Draw();
 	// 데이타 베이스///////////////////
 	sql.Draw();
@@ -50,6 +52,7 @@ void Game::Update(double frame)
 		bird.Update();
 		// 입 맛에 맞게
 		map.Update(130);
+		ball.Update();
 		Gmanager.Update();
 		// 데이타 베이스///////////////////
 		// 입 맛에 맞게 (여기선 안쓰임..프레임 값이 필요 할때만.. 그냥 방법만...)

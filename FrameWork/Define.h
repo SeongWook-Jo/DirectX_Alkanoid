@@ -9,6 +9,7 @@
 
 #define STARTWIDTH   600
 #define STARTHEIGHT  700
+#define BALLSPEED 3
 
 // 데이타 베이스
 //#define DB_HOST "127.0.0.1"
