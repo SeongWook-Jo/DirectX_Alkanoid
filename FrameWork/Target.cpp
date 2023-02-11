@@ -40,7 +40,7 @@ void Target::Update()
 		float ballPivot = ball.m_W + (ball.m_WSize / 2);
 		float barPivot = m_W + (m_WSize / 2);
 
-		x = (barPivot - ballPivot) / m_WSize;
+		x = ( ballPivot - barPivot) / (m_WSize / 2);
 
 		x = Clamp<float>(x, -0.5, 0.5);
 		y = -(1 - fabs(x));

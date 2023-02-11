@@ -29,6 +29,13 @@ void Key::Update()
 		}
 
 	}
+
+	if (KeyDown(VK_F3))
+	{
+		ball.m_W = STARTWIDTH;
+		ball.m_H = STARTHEIGHT - 30;
+
+	}
 	
 	if(KeyDown(VK_F12))
 	{

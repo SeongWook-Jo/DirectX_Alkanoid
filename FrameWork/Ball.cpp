@@ -30,6 +30,7 @@ void Ball::Update()
 	//¡§±‘»≠
 	m_DirX = m_DirX / sqrt(m_DirX * m_DirX + m_DirY * m_DirY);
 	m_DirY = m_DirY / sqrt(m_DirX * m_DirX + m_DirY * m_DirY);
+
 	m_W += (m_DirX * m_Speed);
 	m_H += (m_DirY * m_Speed);
 }
