@@ -58,17 +58,13 @@
 
 #include "Map.h"
 #include "Target.h"
-#include "Monster.h"
 
 #include "Key.h"
 #include "Sound.h"
 #include "GameManager.h"
 
-#include "Bird.h"
 #include "Ball.h"
 
-// 데이타 베이스///////////////////
-#include "Mysql.h"
 
 /* ---------------------------------------------------
 ///////////////// 사용자 추가 파일 ///////////////////

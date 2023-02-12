@@ -174,11 +174,6 @@ LRESULT CALLBACK WndProc( HWND g_hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam )
 				 key.KeyTime = GetTickCount64();
 			 }
 		 }
-		 else if (strstr(buffer, "s") != NULL) 
-		 {
-			 // 데이타 베이스 저장
-			 sql.save();
-		 }
 
         ZeroMemory( &buffer, sizeof(buffer) );
 		break;

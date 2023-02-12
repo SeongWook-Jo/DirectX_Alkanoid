@@ -147,7 +147,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Ball.h" />
-    <ClInclude Include="Bird.h" />
     <ClInclude Include="Chap.h" />
     <ClInclude Include="CMng.h" />
     <ClInclude Include="Define.h" />
@@ -160,8 +159,6 @@
     <ClInclude Include="Logo.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Menu.h" />
-    <ClInclude Include="Monster.h" />
-    <ClInclude Include="Mysql.h" />
     <ClInclude Include="Over.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="Sprite.h" />
@@ -169,7 +166,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Ball.cpp" />
-    <ClCompile Include="Bird.cpp" />
     <ClCompile Include="CMng.cpp" />
     <ClCompile Include="DXUTsound.cpp" />
     <ClCompile Include="DeviceFont.cpp" />
@@ -180,8 +176,6 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Monster.cpp" />
-    <ClCompile Include="Mysql.cpp" />
     <ClCompile Include="Over.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Sprite.cpp" />

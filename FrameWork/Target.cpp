@@ -22,7 +22,7 @@ void Target::Init()
 
 	sprintf_s(FileName, "./resource/Img/taget/%02d.png", BarState);
 	BarImg.Create(FileName, false, D3DCOLOR_XRGB(0, 0, 0));
-	m_WSize = BarImg.imagesinfo.Width;
+	m_WSize = BarImg.imagesinfo.Width - 10;
 	m_HSize = BarImg.imagesinfo.Height;
 
 }
