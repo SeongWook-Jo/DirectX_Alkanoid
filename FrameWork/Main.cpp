@@ -174,6 +174,11 @@ LRESULT CALLBACK WndProc( HWND g_hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam )
 				 key.KeyTime = GetTickCount64();
 			 }
 		 }
+		 else if (strstr(buffer, "q") != NULL)
+		 {
+			 //게임종료
+			 DestroyWindow(g_hWnd);
+		 }
 
         ZeroMemory( &buffer, sizeof(buffer) );
 		break;

@@ -37,6 +37,9 @@
     <Filter Include="소스 파일\Ball">
       <UniqueIdentifier>{b5354847-b5af-4b2f-a3ea-8e7dcb4d5ce7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\블럭">
+      <UniqueIdentifier>{37806d3d-b15f-4967-9a6f-2ae4e609bfa9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h">
@@ -90,6 +93,9 @@
     <ClInclude Include="Ball.h">
       <Filter>소스 파일\Ball</Filter>
     </ClInclude>
+    <ClInclude Include="Blocks.h">
+      <Filter>소스 파일\블럭</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="key.cpp">
@@ -136,6 +142,9 @@
     </ClCompile>
     <ClCompile Include="Ball.cpp">
       <Filter>소스 파일\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="Blocks.cpp">
+      <Filter>소스 파일\블럭</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

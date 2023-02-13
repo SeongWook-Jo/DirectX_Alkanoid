@@ -15,7 +15,7 @@ void Game::Init()
 	sound.Init();
 	ball.Init();
 	Gmanager.Init();
-
+	blocks.Init();
 }
 
 void Game::Draw()
@@ -25,6 +25,7 @@ void Game::Draw()
 	target.Draw();
 	ball.Draw();
 	Gmanager.Draw();
+	blocks.Draw();
 
 }
 
@@ -47,6 +48,7 @@ void Game::Update(double frame)
 		map.Update(130);
 		ball.Update();
 		Gmanager.Update();
+		blocks.Update();
 
 		a = GetTickCount64();
 	}
