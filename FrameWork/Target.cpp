@@ -9,7 +9,6 @@ Target::Target()
 	BarState = 0;
 	m_W = STARTWIDTH;
 	m_H = STARTHEIGHT;
-
 }
 
 Target::~Target()
