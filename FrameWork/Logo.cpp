@@ -125,7 +125,7 @@ void Logo::Init()
 // Chap, 재정의 함수 호출
 void Logo::Update(double frame)
 {
-	alpha += speed * frame / 1000;	//처음에 안보였다가 255되면 로고 보임
+	alpha += speed * frame / 400;	//처음에 안보였다가 255되면 로고 보임
 	if( alpha >= 255 )
 	{
 		alpha = 255;

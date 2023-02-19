@@ -6,7 +6,7 @@ Ball::Ball()
 {
 	m_W = STARTWIDTH;
 	m_H = STARTHEIGHT - 30;
-	m_Speed = BALLSPEED + 5;
+	m_Speed = BALLSPEED + 3;	//5
 	m_DirX = 0;
 	m_DirY = 0;
 	bTempStart = false;

@@ -49,7 +49,7 @@ void Target::Update()
 	}
 
 
-	m_W = Clamp<float>(m_W, 420, 845);
+	m_W = Clamp<float>(m_W, 420, 885);	//420,845
 
 }
 
