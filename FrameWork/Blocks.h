@@ -8,7 +8,7 @@ class Blocks
 		int point;				//충돌했을때 먹는 점수
 		bool life;
 		bool death;
-		double dx, dy, dz, drx, dry, drz;	// 데미지존
+		float dx, dy, dz, drx, dry, drz;	// 데미지존
 	};
 
 	Sprite Bkimg[5];	//이미지
