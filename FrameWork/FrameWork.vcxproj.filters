@@ -40,6 +40,9 @@
     <Filter Include="소스 파일\블럭">
       <UniqueIdentifier>{37806d3d-b15f-4967-9a6f-2ae4e609bfa9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Round1">
+      <UniqueIdentifier>{c00f571f-45ed-4fe0-9a83-e3e657fb5cab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h">
@@ -96,6 +99,9 @@
     <ClInclude Include="Blocks.h">
       <Filter>소스 파일\블럭</Filter>
     </ClInclude>
+    <ClInclude Include="Round1.h">
+      <Filter>소스 파일\Round1</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="key.cpp">
@@ -145,6 +151,9 @@
     </ClCompile>
     <ClCompile Include="Blocks.cpp">
       <Filter>소스 파일\블럭</Filter>
+    </ClCompile>
+    <ClCompile Include="Round1.cpp">
+      <Filter>소스 파일\Round1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

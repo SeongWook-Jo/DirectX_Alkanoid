@@ -18,6 +18,18 @@
 //#define DB_NAME "test"
 //#define CHOP(x) x[strlen(x) - 1] = ' ' // 쓸려다가 안씀...
 
+#define None 0
+#define	GREY 1
+#define	RED 2
+#define	YELLOW 3
+#define	BLUE 4
+#define	GREEN 5
+#define	ORANGE 6
+#define	SKY 7
+#define	PINK 8
+#define	WHITE 9
+
+
 enum gamechap
 {
 	LOGO = 0,
@@ -45,3 +57,4 @@ T Clamp(T value, T min, T max)
 	if (value < min) value = min;
 	return value;
 }
+

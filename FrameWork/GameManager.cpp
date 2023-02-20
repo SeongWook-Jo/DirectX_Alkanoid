@@ -55,9 +55,9 @@ void GameManager::Draw()
 {
 	//블럭 총 카운트 숫자 나타냄(테스트)
 	char show[20];
-	itoa(blocks.m_BlockCount, show, 10);
+	//itoa(blocks.m_BlockCount, show, 10);
 	dv_font.DrawString(show, 200, 210);   //글자출력	
 	//점수
-	itoa(blocks.score, show, 10);
+	//itoa(blocks.score, show, 10);
 	dv_font.DrawString(show, 200, 310);   //글자출력
 }

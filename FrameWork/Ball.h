@@ -1,5 +1,6 @@
 #pragma once
 #include "Include.h"
+
 class Ball
 {
 	Sprite BallImg;
