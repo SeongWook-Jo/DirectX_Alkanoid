@@ -102,6 +102,12 @@
     <ClInclude Include="Round1.h">
       <Filter>소스 파일\Round1</Filter>
     </ClInclude>
+    <ClInclude Include="Game2.h">
+      <Filter>D3D Core\코어 헤더파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Round2.h">
+      <Filter>소스 파일\Round1</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="key.cpp">
@@ -153,6 +159,12 @@
       <Filter>소스 파일\블럭</Filter>
     </ClCompile>
     <ClCompile Include="Round1.cpp">
+      <Filter>소스 파일\Round1</Filter>
+    </ClCompile>
+    <ClCompile Include="Game2.cpp">
+      <Filter>D3D Core\코어 소스</Filter>
+    </ClCompile>
+    <ClCompile Include="Round2.cpp">
       <Filter>소스 파일\Round1</Filter>
     </ClCompile>
   </ItemGroup>

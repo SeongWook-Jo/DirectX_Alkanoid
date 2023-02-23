@@ -11,6 +11,7 @@ public :
 	bool tests;
 
 	Sprite m_MapImg[2];	//스테이지1 맵 스프라이트
+	Sprite m_MapImg2[2];	//스테이지2 맵 스프라이트
 
 	Sprite m_MapImg1_1[6];
 	Sprite m_MapImg1_2[45];

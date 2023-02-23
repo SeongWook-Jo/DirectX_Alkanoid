@@ -1,13 +1,13 @@
-#ifndef __Over_H__
-#define __Over_H__
+#ifndef __Game2_H__
+#define __Game2_H__
 
-class Over : public Chap
+class Game2 : public Chap
 {
-	Sprite overimg;
 public:
-	Over();
-	~Over();
+	Game2();
+	~Game2();
 
+	DWORD GameTime;
 	virtual void Init();
 	virtual void Update(double frame);
 	virtual void Draw();

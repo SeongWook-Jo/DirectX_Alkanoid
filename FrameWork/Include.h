@@ -49,6 +49,7 @@
 //////////////////////////////////////////////////////
 -----------------------------------------------------*/
 #include "Game.h"
+#include "Game2.h"
 #include "Logo.h"
 #include "Menu.h"
 #include "Over.h"
@@ -66,6 +67,7 @@
 #include "Blocks.h"
 #include "Ball.h"
 #include "Round1.h"
+#include "Round2.h"
 
 
 /* ---------------------------------------------------

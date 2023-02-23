@@ -16,7 +16,8 @@ public:
 	float b_HSize;	//블럭이미지 세로사이즈
 	float m_locationX, m_locationY; //위치값
 
-	bool isBoom = false;
+	bool isBoom = false;	//충돌 on/off
+	bool isBlock = true;	//블럭 on/off
 
 	void Init(int ColorNum);
 	void Update();

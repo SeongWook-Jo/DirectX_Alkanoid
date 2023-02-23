@@ -154,6 +154,7 @@
     <ClInclude Include="DXUTsound.h" />
     <ClInclude Include="DeviceFont.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Game2.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Include.h" />
     <ClInclude Include="key.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Over.h" />
     <ClInclude Include="Round1.h" />
+    <ClInclude Include="Round2.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="Target.h" />
@@ -173,6 +175,7 @@
     <ClCompile Include="DXUTsound.cpp" />
     <ClCompile Include="DeviceFont.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Game2.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="key.cpp" />
     <ClCompile Include="Logo.cpp" />
@@ -181,6 +184,7 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Over.cpp" />
     <ClCompile Include="Round1.cpp" />
+    <ClCompile Include="Round2.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="Target.cpp" />

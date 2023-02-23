@@ -1,37 +1,38 @@
 #include "Include.h"
 
-Game::Game()
+Game2::Game2()
+{	
+}
+
+Game2::~Game2()
 {
 }
 
-Game::~Game()
-{
-}
-
-void Game::Init()
+void Game2::Init()
 {
 	map.Init();
 	target.Init();
 	sound.Init();
 	ball.Init();
 	Gmanager.Init();
-	round1.Init();
+	round2.Init();
 }
 
-void Game::Draw()
+void Game2::Draw()
 {
 	map.Draw();
 
 	target.Draw();
 	ball.Draw();
 	Gmanager.Draw();
-	round1.Draw();
+	round2.Draw();
 
 }
 
 // Chap, 재정의 함수 호출
-void Game::Update(double frame)
+void Game2::Update(double frame)
 {
+	
 	static DWORD a = 0;
 
 	if (GetTickCount64() - a > frame)
@@ -42,15 +43,15 @@ void Game::Update(double frame)
 		map.Update(130);
 		ball.Update();
 		Gmanager.Update();
-		round1.Update();
+		round2.Update();
 
 		a = GetTickCount64();
-	}	
+	}
 
 }
 
 
-void Game::OnMessage( MSG* msg )
+void Game2::OnMessage(MSG* msg)
 {
 
 }

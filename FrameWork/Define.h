@@ -11,13 +11,7 @@
 #define STARTHEIGHT  700
 #define BALLSPEED 3
 
-// 데이타 베이스
-//#define DB_HOST "127.0.0.1"
-//#define DB_USER "root"
-//#define DB_PASS "123456" // "Ws05290529*"
-//#define DB_NAME "test"
-//#define CHOP(x) x[strlen(x) - 1] = ' ' // 쓸려다가 안씀...
-
+//block 컬러
 #define None 0
 #define	GREY 1
 #define	RED 2
@@ -35,8 +29,9 @@ enum gamechap
 	LOGO = 0,
 	MENU = 1,
 	GAME = 2,
-	OVER = 3,
-	TOTALCHAP //for문 돌릴땐 이만큼만 (4)만 돌리면됨
+	GAME2 = 3,
+	OVER = 4,
+	TOTALCHAP //for문 돌릴땐 이만큼만 (5)만 돌리면됨
 };
 
 enum alphabet
