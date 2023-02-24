@@ -9,7 +9,6 @@ Ball::Ball()
 	m_Speed = BALLSPEED + 3;	//5
 	m_DirX = 0;
 	m_DirY = 0;
-	bTempStart = false;
 }
 
 void Ball::Init()
@@ -24,20 +23,29 @@ void Ball::Init()
 
 void Ball::Update()
 {
-	//테스트용변수 F2 누르면 TRUE
-	if (!bTempStart) return;
 
-	//정규화
+
+	if (!Gmanager.m_StageStart)
+	{
+		m_W = target.m_W + (target.m_WSize / 2); // 확인해보니 사이즈에 문제 있음
+		m_H = target.m_H - m_HSize;
+		return;
+	}
+	if (m_H > target.m_H + target.m_HSize + 100)
+	{
+		Gmanager.GameOver();
+	}
 	m_DirX = m_DirX / sqrt(m_DirX * m_DirX + m_DirY * m_DirY);
 	m_DirY = m_DirY / sqrt(m_DirX * m_DirX + m_DirY * m_DirY);
 
 	m_W += (m_DirX * m_Speed);
 	m_H += (m_DirY * m_Speed);
+
 }
 
 void Ball::Draw()
 {
-	BallImg.Render(m_W, m_H,0,1,1);
+	BallImg.Render(m_W, m_H, 0, 1, 1);
 }
 
 void Ball::BarBounce(float x, float y)

@@ -18,6 +18,7 @@ void Round1::Init()
 	{
 		for (int j = 0; j < 13; ++j)
 		{
+			bkarr1[i][j].isBoom = false;
 			bkarr1[i][j].Init(chap1_color[i][j]);
 			bkarr1[i][j].SetLocation(x, y);
 			x += blockSizeX;

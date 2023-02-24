@@ -31,7 +31,7 @@ void Over::Draw()
 
 	//점수
 	char show[20];
-	itoa(round1.score, show, 10);
+	itoa(Gmanager.m_Score, show, 10);
 	dv_font.DrawString(show, 640, 265);   //글자출력
 }
 

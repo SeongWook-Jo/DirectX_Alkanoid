@@ -39,8 +39,8 @@ void Menu::OnMessage(MSG* msg)
 	case WM_KEYDOWN:
 		switch (msg->wParam) {
 		case VK_F12:	//f12누르면 게임으로 넘어감
-			if (g_Mng.n_Chap = MENU) {
-
+			if (g_Mng.n_Chap == MENU) {
+				Gmanager.m_Score = 0;
 				g_Mng.n_Chap = GAME; 
 				sound.m_Bk1->Play(0, DSBPLAY_LOOPING);
 

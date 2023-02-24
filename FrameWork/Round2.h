@@ -27,7 +27,6 @@ public:
 
 	float blockSizeX;
 	float blockSizeY;
-	int score;			//총 점수
 	int m_BlockCount = 91;	//블럭카운트
 
 	void Init();

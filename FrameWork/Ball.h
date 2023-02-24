@@ -22,8 +22,6 @@ public:
 	void Update();
 	void Draw();
 
-	//테스트 용도로 사용
-	bool bTempStart;
 
 	//충돌처리 구현
 
