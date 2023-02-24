@@ -22,6 +22,7 @@ void Over::Update(double frame)
 	if (KeyDown(VK_SPACE))
 	{
 		g_Mng.n_Chap = MENU;
+		Gmanager.GameReset();
 	}
 }
 

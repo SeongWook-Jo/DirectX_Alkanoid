@@ -19,6 +19,7 @@ void Round2::Init()
 	{
 		for (int j = 0; j < 13; ++j)
 		{
+			bkarr2[i][j].isBoom = false;
 			bkarr2[i][j].Init(chap1_color[i][j]);	//색 숫자넣음
 			bkarr2[i][j].SetLocation(x, y);			//위치값 넣음
 			x += blockSizeX;						//13번 블럭이미지 가로사이즈만큼 더함

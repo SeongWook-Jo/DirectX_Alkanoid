@@ -1,5 +1,6 @@
 #include "Include.h"
 
+Blocks blocks;
 
 Blocks::Blocks()
 {
@@ -15,6 +16,10 @@ void Blocks::Init(int ColorNum)
 	{
 		isBlock = false;
 		return;
+	}
+	if (ColorNum == 1)
+	{
+		isGray = true;
 	}
 
 	char FileName[256];
@@ -72,10 +77,18 @@ void Blocks::Draw()
 ///// Block과 Ball충돌 ////////
 void Blocks::Boom()
 {
-
-	isBoom = true;
-	Gmanager.m_Score += 100;
-	--Gmanager.m_BlockCount;
+	//회색블럭이면(isGray=true) 두번째에 사라지게(처음 충돌시 isBoom끄고, isGray끄고)
+	if (isGray)
+	{
+		isBoom = false;
+		isGray = false;	//회색블럭 아님으로 바꿈		
+	}
+	else   //회색블럭 첫 충돌 외 충돌시
+	{
+		isBoom = true;
+		Gmanager.m_Score += 100;
+		--Gmanager.m_BlockCount;
+	}
 }
 
 void Blocks::SetLocation(int x, int y)

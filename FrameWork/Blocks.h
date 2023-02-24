@@ -18,6 +18,7 @@ public:
 
 	bool isBoom = false;	//충돌 on/off
 	bool isBlock = true;	//블럭 on/off
+	bool isGray = false;	//회색블럭(2번에깨지게)
 
 	void Init(int ColorNum);
 	void Update();
@@ -26,3 +27,4 @@ public:
 	void SetLocation(int x, int y);
 };
 
+extern Blocks blocks;

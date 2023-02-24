@@ -33,7 +33,11 @@ void Ball::Update()
 	}
 	if (m_H > target.m_H + target.m_HSize + 100)
 	{
-		Gmanager.GameOver();
+		if (Gmanager.deathCnt == 2)	//세번째 충돌시
+		{
+			Gmanager.GameOver();	//게임오버
+		}
+		Gmanager.BallOver();	//부활
 	}
 	m_DirX = m_DirX / sqrt(m_DirX * m_DirX + m_DirY * m_DirY);
 	m_DirY = m_DirY / sqrt(m_DirX * m_DirX + m_DirY * m_DirY);
@@ -52,11 +56,13 @@ void Ball::BarBounce(float x, float y)
 {
 	m_DirX = x;
 	m_DirY = y;
+	sound.m_Shot->Play(0);
 }
 
 void Ball::Bounce(float x, float y)
 {
 	m_DirX *= x;
 	m_DirY *= y;
+	sound.m_Shot->Play(0);
 }
 
