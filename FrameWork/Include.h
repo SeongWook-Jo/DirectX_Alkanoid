@@ -32,7 +32,7 @@
 #include <d3d9.h>
 #include <d3dx9.h>
 #include <dsound.h>
-#include "DXUTsound.h"
+//#include "DXUTsound.h"
 
 #include "Define.h"
 #include "DeviceFont.h"
@@ -69,6 +69,9 @@
 #include "Round1.h"
 #include "Round2.h"
 
+//// fmod사운드 ////
+#include<map>
+#include "FmodSound.h"
 
 /* ---------------------------------------------------
 ///////////////// 사용자 추가 파일 ///////////////////

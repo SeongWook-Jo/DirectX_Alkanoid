@@ -56,13 +56,13 @@ void Ball::BarBounce(float x, float y)
 {
 	m_DirX = x;
 	m_DirY = y;
-	sound.m_Shot->Play(0);
+	EffectPlay(sound.m_Shoot);	//fmod사운드 연결
 }
 
 void Ball::Bounce(float x, float y)
 {
 	m_DirX *= x;
 	m_DirY *= y;
-	sound.m_Shot->Play(0);
+	EffectPlay(sound.m_Shoot); 	//fmod사운드 연결
 }
 

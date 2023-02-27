@@ -2,11 +2,8 @@
 
 Sound sound;
 
-
-
 Sound::Sound(void)
-{
-	//g_pSoundManager = NULL; 사용 안했다
+{	
 }
 
 Sound::~Sound(void)
@@ -15,7 +12,10 @@ Sound::~Sound(void)
 
 void Sound::Init()
 {
-	g_pSoundManager->Create( &m_Bk1, (LPWSTR)L"./resource/Sound/BGM_0001.wav", 0, GUID_NULL ) ;
-	g_pSoundManager->Create( &m_Shot, (LPWSTR)L"./resource/Sound/sound-bounce.wav", 0, GUID_NULL ) ;
+	//사운드 불러오기
+	// 배경음
+	m_Back = AddSoundFile("./resource/Sound/BGM_0001.wav", true);
+	// 볼충돌 효과음
+	m_Shoot = AddSoundFile("./resource/Sound/sound-bounce.wav", false);
 }
 

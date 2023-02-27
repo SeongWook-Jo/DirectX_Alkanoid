@@ -108,6 +108,9 @@
     <ClInclude Include="Round2.h">
       <Filter>소스 파일\Round1</Filter>
     </ClInclude>
+    <ClInclude Include="FmodSound.h">
+      <Filter>D3D Core\코어 헤더파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="key.cpp">
@@ -166,6 +169,9 @@
     </ClCompile>
     <ClCompile Include="Round2.cpp">
       <Filter>소스 파일\Round1</Filter>
+    </ClCompile>
+    <ClCompile Include="FmodSound.cpp">
+      <Filter>D3D Core\코어 소스</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

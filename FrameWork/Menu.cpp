@@ -42,8 +42,7 @@ void Menu::OnMessage(MSG* msg)
 			if (g_Mng.n_Chap == MENU) {
 				Gmanager.m_Score = 0;
 				g_Mng.n_Chap = GAME; 
-				sound.m_Bk1->Play(0, DSBPLAY_LOOPING);
-
+			//	BGPlay(sound.m_Back);	//fmod사운드 배경음연결
 			}
 			break;
 		}		

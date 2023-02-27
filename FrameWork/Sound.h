@@ -1,6 +1,5 @@
 #pragma once
 
-//fmode로 바꿔야함
 class Sound
 {
 	
@@ -8,17 +7,13 @@ public:
 	Sound(void);
 	~Sound(void);
 
-	
-CSoundManager* g_pSoundManager;
-CSound*		m_Bk1;
-CSound*		m_Shot;
-
 int m_Select;
 
-	
+//fmod사운드
+int m_Back;	//배경음
+int m_Shoot; //공충돌음		
 
 	void Init();
-	
 	
 };
 
