@@ -46,7 +46,7 @@ void GameManager::Update()
 	//	NextStage();
 	//}
 	//if (m_BlockCount == 0 && g_Mng.n_Chap == GAME2) {	//블럭갯수가 0이 되면 메뉴로 넘어가게
-	//	GameOver();
+	//	GameClear();
 	//}
 
 	//임시 클리어조건
@@ -55,7 +55,7 @@ void GameManager::Update()
 		NextStage();
 	}
 	if (m_BlockCount < 85 && g_Mng.n_Chap == GAME2) {	//블럭갯수가 0이 되면 메뉴로 넘어가게
-		GameOver();
+		GameClear();
 	}
 }
 
@@ -71,6 +71,11 @@ void GameManager::GameOver()
 	g_Mng.n_Chap = OVER;	
 }
 
+//게임 클리어
+void GameManager::GameClear()
+{
+	g_Mng.n_Chap = CLEAR;
+}
 
 //바 밑으로 볼이 떨어졌을때 
 void GameManager::BallOver()

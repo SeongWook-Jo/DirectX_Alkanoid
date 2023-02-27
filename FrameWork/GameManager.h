@@ -33,6 +33,7 @@ public:
 	void GameOver();
 	void GameReset();
 	void BallOver();	
+	void GameClear();
 	
 };
 

@@ -54,6 +54,7 @@
 #include "Menu.h"
 #include "Over.h"
 #include "CMng.h"
+#include "Clear.h"
 
 //#include "Night.h"
 

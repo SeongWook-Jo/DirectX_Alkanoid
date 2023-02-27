@@ -91,6 +91,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdL
 	g_Mng.chap[GAME] = new Game;
 	g_Mng.chap[GAME2] = new Game2;
 	g_Mng.chap[OVER] = new Over;
+	g_Mng.chap[CLEAR] = new Clear;
 	/////////////////////////////////////////
 
 	for(int i=0; i<TOTALCHAP; i++)

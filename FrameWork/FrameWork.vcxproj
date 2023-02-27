@@ -149,6 +149,7 @@
     <ClInclude Include="Ball.h" />
     <ClInclude Include="Blocks.h" />
     <ClInclude Include="Chap.h" />
+    <ClInclude Include="Clear.h" />
     <ClInclude Include="CMng.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="DXUTsound.h" />
@@ -172,6 +173,7 @@
   <ItemGroup>
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Blocks.cpp" />
+    <ClCompile Include="Clear.cpp" />
     <ClCompile Include="CMng.cpp" />
     <ClCompile Include="DXUTsound.cpp" />
     <ClCompile Include="DeviceFont.cpp" />
