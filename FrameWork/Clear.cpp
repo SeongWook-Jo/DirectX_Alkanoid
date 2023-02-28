@@ -1,6 +1,7 @@
 #define _CRT_NONSTDC_NO_DEPRECATE
 #include "Include.h"
 
+Clear clear;
 
 Clear::Clear()
 {
@@ -27,16 +28,19 @@ void Clear::Init()
 
 // Chap, 재정의 함수 호출
 void Clear::Update(double frame)
-{
-	alpha += speed * frame / 300;	//처음에 안보였다가 점점 로고 보임
-	if (alpha >= 255)
-	{
-		alpha = 255;
-		speed = -speed;
-	}
-	if (alpha <= 0) {	//알파값이 다시 0이 되면(로고안보이면)메뉴로 넘어가게
-		clear1 = false;
-	}
+{	
+	if (clear1 == true)
+	{		
+		alpha += speed * frame / 300;	//처음에 안보였다가 점점 로고 보임
+		if (alpha >= 255)
+		{
+			alpha = 255;
+			speed = -speed;
+		}
+		if (alpha <= 0) {	//알파값이 다시 0이 되면(로고안보이면)메뉴로 넘어가게
+			clear1 = false;
+		}
+	}	
 
 	if (KeyDown(VK_SPACE))
 	{

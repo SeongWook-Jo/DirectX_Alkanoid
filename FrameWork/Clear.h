@@ -18,5 +18,6 @@ public:
 
 	virtual void OnMessage(MSG* msg);
 };
-
+extern Clear clear;
 #endif
+

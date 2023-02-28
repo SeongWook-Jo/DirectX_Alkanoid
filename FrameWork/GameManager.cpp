@@ -12,8 +12,6 @@ GameManager::GameManager(void)
 
 	m_GameStart = true;
 	m_StageStart = false;
-
-	//m_BlockCount = round1.m_BlockCount;
 }
 
 GameManager::~GameManager(void)
@@ -26,17 +24,12 @@ void GameManager::NextStage()
 	blocks.isBlock = true;
 	m_BlockCount = round2.m_BlockCount;
 	g_Mng.n_Chap = GAME2;
+	map.m_Stage = 2;
 }
 
 void GameManager::Init()
 {
 	lifebarimg.Create("./resource/Img/taget/00.png", false, D3DCOLOR_XRGB(0, 0, 0));
-
-	//if ((fp = fopen("./Save/save.fss", "rb")) == NULL)	//rb기계어로 파일 오픈
-	//{
-	//	return;
-	//}
-	//fclose(fp);
 }
 
 void GameManager::Update()
@@ -63,7 +56,6 @@ void GameManager::Update()
 void GameManager::Delete()
 {
 	//	sound.g_pSoundManager->drr  
-
 }
 
 void GameManager::GameOver()
@@ -73,8 +65,8 @@ void GameManager::GameOver()
 
 //게임 클리어
 void GameManager::GameClear()
-{
-	g_Mng.n_Chap = CLEAR;
+{	
+	g_Mng.n_Chap = CLEAR;	
 }
 
 //바 밑으로 볼이 떨어졌을때 
@@ -105,6 +97,8 @@ void GameManager::GameReset()
 
 	m_BlockCount = 65;
 	deathCnt = 0;
+	map.m_Stage = 1;
+	clear.clear1 = true;
 }
 
 void GameManager::Draw()
@@ -119,15 +113,8 @@ void GameManager::Draw()
 	{
 		lifebarimg.Render(420, 730, 0, 0.5, 0.5);
 	}
-
-	//블럭 총 카운트 숫자 나타냄(테스트)
+		
 	char show[20];
-
-	//itoa(round1.m_BlockCount, show, 10);
-	//dv_font.DrawString(show, 200, 210);   //글자출력	
-
-	//itoa(round2.m_BlockCount, show, 10);
-	//dv_font.DrawString(show, 200, 230);   //글자출력
 
 	itoa(m_Score, show, 10);
 	dv_font.DrawString(show, 620, 55);   //글자출력

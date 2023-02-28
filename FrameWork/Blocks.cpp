@@ -51,13 +51,11 @@ void Blocks::Update()
 
 			if (ball.m_W + ball.m_WSize > m_locationX + 1 || ball.m_W < m_locationX + b_WSize - 1)
 			{
-				ball.Bounce(-1.f, 1.f);
-				//Boom();
+				ball.Bounce(-1.f, 1.f);				
 			}
 			if (ball.m_H + ball.m_HSize + 1 > m_locationY || ball.m_H < m_locationY + b_HSize - 1)
 			{
-				ball.Bounce(1.f, -1.f);
-				//Boom();
+				ball.Bounce(1.f, -1.f);				
 			}
 			Boom();
 		}
@@ -81,13 +79,14 @@ void Blocks::Boom()
 	if (isGray)
 	{
 		isBoom = false;
-		isGray = false;	//회색블럭 아님으로 바꿈		
+		isGray = false;	//회색블럭 아님으로 바꿈	
+		EffectPlay(sound.m_graycol); 	//fmod사운드 연결
 	}
 	else   //회색블럭 첫 충돌 외 충돌시
 	{
 		isBoom = true;
 		Gmanager.m_Score += 100;
-		--Gmanager.m_BlockCount;
+		--Gmanager.m_BlockCount;		
 	}
 }
 
@@ -95,5 +94,4 @@ void Blocks::SetLocation(int x, int y)
 {
 	m_locationX = x;
 	m_locationY = y;
-
 }

@@ -13,7 +13,6 @@ public :
 
 	//아이템 적용 시 변경 1로 변경
 	int BarState;
-	//Ball ball;
 
 	bool m_Life;
 

@@ -57,11 +57,7 @@ void Target::Draw()
 {
 	if (Gmanager.m_GameStart == true)
 		BarImg.Render(m_W, m_H, 0, 0.7, 0.7);
-
-	if (Gmanager.m_Collision == true)
-	{
-
-	}
+		
 }
 
 void Target::Reset()
