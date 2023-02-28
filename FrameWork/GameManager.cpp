@@ -91,6 +91,8 @@ void GameManager::BallOver()
 		m_StageStart = false;
 		g_Mng.n_Chap = GAME2;
 	}
+	EffectPlay(sound.m_Death);
+
 }
 
 //게임 완전 초기화

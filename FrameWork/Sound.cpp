@@ -17,5 +17,7 @@ void Sound::Init()
 	m_Back = AddSoundFile("./resource/Sound/BGM_0001.wav", true);
 	// 볼충돌 효과음
 	m_Shoot = AddSoundFile("./resource/Sound/sound-bounce.wav", false);
+	//공 폭발음
+	m_Death = AddSoundFile("./resource/Sound/death.mp3", false);
 }
 
