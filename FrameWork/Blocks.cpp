@@ -42,7 +42,7 @@ void Blocks::Update()
 {
 	if (!isBoom && isBlock)
 	{
-		//Bar客 Ball狼 面倒贸府备泅
+		//Block苞 Ball狼 面倒贸府备泅
 		if (ball.m_W + ball.m_WSize > m_locationX &&
 			ball.m_W < m_locationX + b_WSize &&
 			ball.m_H + ball.m_HSize > m_locationY &&

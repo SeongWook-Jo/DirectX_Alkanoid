@@ -47,9 +47,7 @@ void Target::Update()
 
 		ball.BarBounce(x, y);
 	}
-
-
-	m_W = Clamp<float>(m_W, 420, 870);	//420,845
+	m_W = Clamp<float>(m_W, 420, 870);	//바의 가로 이동거리제한
 
 }
 

@@ -5,7 +5,6 @@ Key key;
 Key::Key(void)
 {
 
-
 }
 
 Key::~Key(void)

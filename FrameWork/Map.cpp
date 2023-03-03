@@ -12,7 +12,7 @@ Map::~Map()
 {
 }
 
-void Map::Init()	//로드할 이미지 넣어놓고
+void Map::Init()	//로드할 이미지 넣음
 {	
 	char FileName[256];
 
@@ -25,7 +25,7 @@ void Map::Update(double frame)
 {
 	//볼 튀기는 벽의 범위
 	if (ball.m_W < 420) ball.Bounce(-1, 1);
-	if (ball.m_W+ball.m_WSize > 925) ball.Bounce(-1, 1);	//905
+	if (ball.m_W+ball.m_WSize > 925) ball.Bounce(-1, 1);
 	if (ball.m_H < 120) ball.Bounce(1, -1);
 }
 

@@ -4,7 +4,7 @@ g_DeviceFont dv_font;
 
 g_DeviceFont::g_DeviceFont(void)
 {
-	// 폰트 리소스 추가(cpp파일과 같은 폴더안에 폰트넣어놓음) 다운받음 폰트 쓰고싶음
+	// 폰트 리소스 추가
 	AddFontResourceEx("./Typo_SsangmunDongB.ttf", FR_PRIVATE, 0);
 }
 
@@ -59,7 +59,7 @@ bool g_DeviceFont::DrawString( const char* msg , int x , int y , D3DCOLOR color)
 
 	//그릴때는 비긴하고 앤드
 	Sprite->Begin( D3DXSPRITE_ALPHABLEND ) ;
-	//Fonts->DrawText(Sprite, msg, strlen(msg), &rect, DT_NOCLIP, color(원하는 칼러 전달 시));
+
 	Fonts->DrawText( Sprite , msg , strlen( msg ) , &rect , DT_NOCLIP , D3DCOLOR_XRGB(255,0,255) ) ;
 	Sprite->End() ;
 	

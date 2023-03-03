@@ -152,7 +152,6 @@
     <ClInclude Include="Clear.h" />
     <ClInclude Include="CMng.h" />
     <ClInclude Include="Define.h" />
-    <ClInclude Include="DXUTsound.h" />
     <ClInclude Include="DeviceFont.h" />
     <ClInclude Include="FmodSound.h" />
     <ClInclude Include="Game.h" />
@@ -175,7 +174,6 @@
     <ClCompile Include="Blocks.cpp" />
     <ClCompile Include="Clear.cpp" />
     <ClCompile Include="CMng.cpp" />
-    <ClCompile Include="DXUTsound.cpp" />
     <ClCompile Include="DeviceFont.cpp" />
     <ClCompile Include="FmodSound.cpp" />
     <ClCompile Include="Game.cpp" />

@@ -72,9 +72,6 @@
     <ClInclude Include="Over.h">
       <Filter>D3D Core\코어 헤더파일</Filter>
     </ClInclude>
-    <ClInclude Include="DXUTsound.h">
-      <Filter>D3D Core\코어 헤더파일</Filter>
-    </ClInclude>
     <ClInclude Include="Sound.h">
       <Filter>소스 파일\Sound</Filter>
     </ClInclude>
@@ -132,9 +129,6 @@
       <Filter>D3D Core\코어 소스</Filter>
     </ClCompile>
     <ClCompile Include="Logo.cpp">
-      <Filter>D3D Core\코어 소스</Filter>
-    </ClCompile>
-    <ClCompile Include="DXUTsound.cpp">
       <Filter>D3D Core\코어 소스</Filter>
     </ClCompile>
     <ClCompile Include="Sound.cpp">

@@ -24,7 +24,7 @@ void Round2::Init()
 			bkarr2[i][j].SetLocation(x, y);			//위치값 넣음
 			x += blockSizeX;						//13번 블럭이미지 가로사이즈만큼 더함
 		}
-		y += blockSizeY;							//5번 블럭이미지 세로사이즈만큼 더함
+		y += blockSizeY;							//13번 블럭이미지 세로사이즈만큼 더함
 		x = 420;									//x를 420으로 초기화
 	}
 }

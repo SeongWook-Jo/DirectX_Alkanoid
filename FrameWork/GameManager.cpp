@@ -35,27 +35,12 @@ void GameManager::Init()
 void GameManager::Update()
 {
 	//최종 클리어 조건
-	//if (m_BlockCount == 0 && g_Mng.n_Chap == GAME) {	//블럭갯수가 0이 되면 메뉴로 넘어가게
-	//	NextStage();
-	//}
-	//if (m_BlockCount == 0 && g_Mng.n_Chap == GAME2) {	//블럭갯수가 0이 되면 메뉴로 넘어가게
-	//	GameClear();
-	//}
-
-	//임시 클리어조건
-	if (m_BlockCount < 60 && g_Mng.n_Chap == GAME) {	//블럭갯수가 0이 되면 메뉴로 넘어가게
-		
+	if (m_BlockCount == 0 && g_Mng.n_Chap == GAME) {	//블럭갯수가 0이 되면 메뉴로 넘어가게
 		NextStage();
 	}
-	if (m_BlockCount < 85 && g_Mng.n_Chap == GAME2) {	//블럭갯수가 0이 되면 메뉴로 넘어가게
+	if (m_BlockCount == 0 && g_Mng.n_Chap == GAME2) {	//블럭갯수가 0이 되면 메뉴로 넘어가게
 		GameClear();
 	}
-}
-
-
-void GameManager::Delete()
-{
-	//	sound.g_pSoundManager->drr  
 }
 
 void GameManager::GameOver()

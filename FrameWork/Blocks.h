@@ -7,7 +7,7 @@ class Blocks
 	Sprite orgSize; // 01 블럭으로 사이즈 고정
 
 public:
-	Blocks();	
+	Blocks();	//생성자
 	~Blocks();	//소멸자
 
 	float m_blockW;	//블럭 가로

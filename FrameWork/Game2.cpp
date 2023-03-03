@@ -47,9 +47,7 @@ void Game2::Update(double frame)
 
 		a = GetTickCount64();
 	}
-
 }
-
 
 void Game2::OnMessage(MSG* msg)
 {

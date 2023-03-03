@@ -32,7 +32,7 @@ enum gamechap
 	GAME2 = 3,
 	OVER = 4,
 	CLEAR = 5,
-	TOTALCHAP //for문 돌릴땐 이만큼만 (5)만 돌리면됨
+	TOTALCHAP //for문 돌릴땐 이만큼만 (6)만 돌리면됨
 };
 
 enum alphabet

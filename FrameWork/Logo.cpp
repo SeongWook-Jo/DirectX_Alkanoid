@@ -16,7 +16,6 @@ void Logo::Init()
 	alpha = 0;	//안보임
 
 	loadimg.Create("./resource/Img/Load/logo.png", false, D3DCOLOR_XRGB(0, 0, 0));
-	//g_SoundManager.Create(&Sound1, (LPWSTR)L"sound/hatnim.wav", 0, GUID_NULL);
 }
 
 // Chap, 재정의 함수 호출
@@ -26,13 +25,11 @@ void Logo::Update(double frame)
 	if( alpha >= 255 )
 	{
 		alpha = 255;
-		speed = -speed;
-		//Draw();
+		speed = -speed;		
 	}
 	if(alpha <= 0) {	//알파값이 다시 0이 되면(로고안보이면)메뉴로 넘어가게
 		 g_Mng.n_Chap = MENU;
 	}
-	//Sound1.Play(0, DSBPLAY_LOOPING);
 	
 }
 

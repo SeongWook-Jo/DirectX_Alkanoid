@@ -10,7 +10,7 @@ public :
 	Sprite test;
 	bool tests;
 
-	Sprite m_MapImg[3];	//스테이지1 맵 스프라이트
+	Sprite m_MapImg[3];	// 맵 스프라이트
 	
 	int m_Stage;
 

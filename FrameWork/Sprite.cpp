@@ -27,14 +27,6 @@ bool Sprite::Create(const char* filename, bool bUseTransparency, D3DCOLOR Transp
 
 	return TRUE;
 	
-	/*
-	hr = D3DXCreateTextureFromFileEx( font.Device9 ,
-		filename , D3DX_DEFAULT , D3DX_DEFAULT , 1 , 0 , 	D3DFMT_UNKNOWN , D3DPOOL_DEFAULT,
-		D3DX_FILTER_NONE, 	D3DX_FILTER_NONE, transparencycolor,	NULL , 	NULL, 	&Texture ) ; 
-
-	return TRUE;
-	*/
-
 }
 
 void Sprite::Draw( float dx , float dy , float sx , float sy , float sw , float sh, float centerX, float centerY ) // 화면의 dx, dy에
@@ -107,14 +99,7 @@ void Sprite::RenderDraw( float x , float y , float sx , float sy , float sw , fl
 	ID3DXSprite* pSprite ;
 
 	pSprite = dv_font.Sprite ;
-
-	//D3DXVECTOR3 position( (float)x, (float)y, 1.0f ) ;
-
-/*	Rect.left   = 0 ;
-	Rect.top    = 0 ;
-	Rect.right  = Rect.left + imagesinfo.Width ;
-	Rect.bottom = Rect.top  + imagesinfo.Height ;
-*/
+		
 	D3DXVECTOR3 center ;
 	center.x   = 0;
 	center.y   = 0 ;	

@@ -6,7 +6,7 @@ Ball::Ball()
 {
 	m_W = STARTWIDTH;
 	m_H = STARTHEIGHT - 30;
-	m_Speed = BALLSPEED + 3;	//5
+	m_Speed = BALLSPEED + 3;
 	m_DirX = 0;
 	m_DirY = 0;
 }
@@ -23,8 +23,6 @@ void Ball::Init()
 
 void Ball::Update()
 {
-
-
 	if (!Gmanager.m_StageStart)
 	{
 		m_W = target.m_W + (target.m_WSize / 2); // 확인해보니 사이즈에 문제 있음
